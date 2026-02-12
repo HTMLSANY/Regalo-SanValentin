@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regalo de San Valentín</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <h1>💕 Feliz San Valentín, mi amor 💕</h1>
+        <p>Un día especial para ti, porque tú haces cada día especial.</p>
+    </header>
+
+    <main class="container">
+        <!-- Layout horizontal: Foto izquierda + Carrusel + Foto derecha -->
+        <div class="main-content">
+            <!-- Foto izquierda -->
+            <div class="photo-column left">
+                <img src="Foto1.jpeg" alt="Nuestra foto 1" class="side-img">
+            </div>
+            
+            <!-- Carrusel central -->
+            <div class="carousel-wrapper">
+                <h3 class="carousel-title">Nuestros mejores momentos 💑✨</h3>
+                <div class="carousel">
+                    <div class="carousel-inner">
+                        <img src="Foto1.jpeg" alt="Foto nuestra 1" class="carousel-img active">
+                        <img src="Foto2.jpeg" alt="Foto nuestra 2" class="carousel-img">
+                        <img src="Foto3.jpeg" alt="Foto nuestra 3" class="carousel-img">
+                        <img src="Foto4.jpeg" alt="Foto nuestra 4" class="carousel-img">
+                        <img src="Foto6.jpeg" alt="Foto nuestra 6" class="carousel-img">
+                        <img src="Foto8.jpeg" alt="Foto nuestra 8" class="carousel-img">
+                        <img src="Foto11.jpeg" alt="Foto nuestra 11" class="carousel-img">
+                        <img src="Foto12.jpeg" alt="Foto nuestra 12" class="carousel-img">
+                        <img src="Foto13.jpeg" alt="Foto nuestra 13" class="carousel-img">
+                        <img src="Foto14.jpeg" alt="Foto nuestra 14" class="carousel-img">
+                        <img src="Foto15.jpeg" alt="Foto nuestra 15" class="carousel-img">
+                    </div>
+                    <button class="carousel-btn prev" aria-label="Imagen anterior">❮</button>
+                    <button class="carousel-btn next" aria-label="Siguiente imagen">❯</button>
+                    <div class="carousel-dots">
+                        <!-- Dots generados dinámicamente -->
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Foto derecha -->
+            <div class="photo-column right">
+                <img src="Foto2.jpeg" alt="Nuestra foto 2" class="side-img">
+            </div>
+        </div>
+
+        <!-- Botón Ver Regalo -->
+        <div class="gift-section">
+            <button id="giftBtn" class="gift-btn" aria-label="Ver regalo sorpresa">🎁 Ver Regalo 🎁</button>
+        </div>
+    </main>
+
+    <!-- Modal del regalo -->
+    <div id="giftModal" class="modal">
+        <div class="modal-content">
+            <span class="close" aria-label="Cerrar">&times;</span>
+            <h2>¡Sorpresa! ¡Ferry a Tenerife! 🌴⛴️</h2>
+            <img src="Ferry.png" alt="Ferry Gran Canaria a Tenerife" class="ferry-img">
+            <p>¡Te llevo de ferry desde Gran Canaria hasta Tenerife!</p>
+            <p>Dos islas mágicas para crear más recuerdos juntos.</p>
+            <p>¡Prepárate para playa, sol y... Teide? 💑🏖️</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
